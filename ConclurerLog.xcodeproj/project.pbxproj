@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BACA901F1C55119000516175 /* ConclurerLog.h in Headers */ = {isa = PBXBuildFile; fileRef = BACA901E1C55119000516175 /* ConclurerLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BACA90271C5511B600516175 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA90261C5511B600516175 /* Log.swift */; };
+		BACA90291C5511BE00516175 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA90281C5511BE00516175 /* Color.swift */; };
+		BACA902F1C5511FE00516175 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA902E1C5511FE00516175 /* TextStyle.swift */; };
+		BACA90371C551A9A00516175 /* ConclurerLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACA90361C551A9A00516175 /* ConclurerLogTests.swift */; };
+		BACA90391C551A9A00516175 /* ConclurerLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACA901B1C55119000516175 /* ConclurerLog.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BACA903A1C551A9A00516175 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BACA90121C55119000516175 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BACA901A1C55119000516175;
+			remoteInfo = ConclurerLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BACA901B1C55119000516175 /* ConclurerLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ConclurerLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACA901E1C55119000516175 /* ConclurerLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConclurerLog.h; sourceTree = "<group>"; };
+		BACA90201C55119000516175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BACA90261C5511B600516175 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		BACA90281C5511BE00516175 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		BACA902E1C5511FE00516175 /* TextStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		BACA90341C551A9A00516175 /* ConclurerLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConclurerLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BACA90361C551A9A00516175 /* ConclurerLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclurerLogTests.swift; sourceTree = "<group>"; };
+		BACA90381C551A9A00516175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BACA90171C55119000516175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACA90311C551A9A00516175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACA90391C551A9A00516175 /* ConclurerLog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BACA90111C55119000516175 = {
+			isa = PBXGroup;
+			children = (
+				BACA901D1C55119000516175 /* ConclurerLog */,
+				BACA90351C551A9A00516175 /* ConclurerLogTests */,
+				BACA901C1C55119000516175 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BACA901C1C55119000516175 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BACA901B1C55119000516175 /* ConclurerLog.framework */,
+				BACA90341C551A9A00516175 /* ConclurerLogTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BACA901D1C55119000516175 /* ConclurerLog */ = {
+			isa = PBXGroup;
+			children = (
+				BACA901E1C55119000516175 /* ConclurerLog.h */,
+				BACA90261C5511B600516175 /* Log.swift */,
+				BACA90281C5511BE00516175 /* Color.swift */,
+				BACA902E1C5511FE00516175 /* TextStyle.swift */,
+				BACA90201C55119000516175 /* Info.plist */,
+			);
+			path = ConclurerLog;
+			sourceTree = "<group>";
+		};
+		BACA90351C551A9A00516175 /* ConclurerLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				BACA90361C551A9A00516175 /* ConclurerLogTests.swift */,
+				BACA90381C551A9A00516175 /* Info.plist */,
+			);
+			path = ConclurerLogTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BACA90181C55119000516175 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACA901F1C55119000516175 /* ConclurerLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BACA901A1C55119000516175 /* ConclurerLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACA90231C55119000516175 /* Build configuration list for PBXNativeTarget "ConclurerLog" */;
+			buildPhases = (
+				BACA90161C55119000516175 /* Sources */,
+				BACA90171C55119000516175 /* Frameworks */,
+				BACA90181C55119000516175 /* Headers */,
+				BACA90191C55119000516175 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConclurerLog;
+			productName = ConclurerLog;
+			productReference = BACA901B1C55119000516175 /* ConclurerLog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BACA90331C551A9A00516175 /* ConclurerLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACA903C1C551A9A00516175 /* Build configuration list for PBXNativeTarget "ConclurerLogTests" */;
+			buildPhases = (
+				BACA90301C551A9A00516175 /* Sources */,
+				BACA90311C551A9A00516175 /* Frameworks */,
+				BACA90321C551A9A00516175 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BACA903B1C551A9A00516175 /* PBXTargetDependency */,
+			);
+			name = ConclurerLogTests;
+			productName = ConclurerLogTests;
+			productReference = BACA90341C551A9A00516175 /* ConclurerLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BACA90121C55119000516175 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Conclurer GmbH";
+				TargetAttributes = {
+					BACA901A1C55119000516175 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					BACA90331C551A9A00516175 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = BACA90151C55119000516175 /* Build configuration list for PBXProject "ConclurerLog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BACA90111C55119000516175;
+			productRefGroup = BACA901C1C55119000516175 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BACA901A1C55119000516175 /* ConclurerLog */,
+				BACA90331C551A9A00516175 /* ConclurerLogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BACA90191C55119000516175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACA90321C551A9A00516175 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BACA90161C55119000516175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACA90271C5511B600516175 /* Log.swift in Sources */,
+				BACA902F1C5511FE00516175 /* TextStyle.swift in Sources */,
+				BACA90291C5511BE00516175 /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BACA90301C551A9A00516175 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACA90371C551A9A00516175 /* ConclurerLogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BACA903B1C551A9A00516175 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BACA901A1C55119000516175 /* ConclurerLog */;
+			targetProxy = BACA903A1C551A9A00516175 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BACA90211C55119000516175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BACA90221C55119000516175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BACA90241C55119000516175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ConclurerLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conclurer.ConclurerLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BACA90251C55119000516175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ConclurerLog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conclurer.ConclurerLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BACA903D1C551A9A00516175 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConclurerLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conclurer.ConclurerLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BACA903E1C551A9A00516175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConclurerLogTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conclurer.ConclurerLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BACA90151C55119000516175 /* Build configuration list for PBXProject "ConclurerLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACA90211C55119000516175 /* Debug */,
+				BACA90221C55119000516175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACA90231C55119000516175 /* Build configuration list for PBXNativeTarget "ConclurerLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACA90241C55119000516175 /* Debug */,
+				BACA90251C55119000516175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BACA903C1C551A9A00516175 /* Build configuration list for PBXNativeTarget "ConclurerLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BACA903D1C551A9A00516175 /* Debug */,
+				BACA903E1C551A9A00516175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BACA90121C55119000516175 /* Project object */;
+}
