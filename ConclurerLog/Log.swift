@@ -18,7 +18,12 @@ public enum LogType: String, Hashable {
 }
 
 public struct Log {
-    public static var styleMap: [LogType: (head: TextStyle, body: TextStyle)] = [:]
+    public static var styleMap: [LogType: (head: TextStyle, body: TextStyle)] = [
+        .Step: (.Default, .Default),
+        .Success: (.Colored((0, 255, 0), .Foreground), .Default),
+        .Notice: (.Colored((255, 255, 0), .Foreground), .Default),
+        .Error: (.Colored((255, 0, 0), .Foreground), .Default)
+    ]
 
     public var type: LogType
     public var filename: String
@@ -35,7 +40,7 @@ public struct Log {
     public func message<T>(items items: [T]) -> String {
         let msg = items.reduce("", combine: { $0+"\($1)"})
         let (headerStyle, bodyStyle) = Log.styleMap[type] ?? (.Default, .Default)
-        return headerStyle.format("[\(type)] \(filename):\(line) \(function):") + "\n" + bodyStyle.format("\(msg)")
+        return headerStyle.format("[\(type)]") + " \(filename):\(line) \(function):\n" + bodyStyle.format("\(msg)")
     }
 }
 
