@@ -19,7 +19,7 @@ public enum LogType: String, Hashable {
 
 public struct Log {
     public static var styleMap: [LogType: (head: TextStyle, body: TextStyle)] = [
-        .Step: (.Default, .Default),
+        .Step: (.Colored((128, 128, 128), .Foreground), .Default),
         .Success: (.Colored((0, 255, 0), .Foreground), .Default),
         .Notice: (.Colored((255, 255, 0), .Foreground), .Default),
         .Error: (.Colored((255, 0, 0), .Foreground), .Default)
