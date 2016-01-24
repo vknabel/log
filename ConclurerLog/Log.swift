@@ -10,27 +10,32 @@ private func _print<T>(item: T) {
     print(item)
 }
 
-public struct Log {
-    public static var defaultHeaderStyle: TextStyle = .Default
-    public static var defaultBodyStyle: TextStyle = .Default
+public enum LogType: String, Hashable {
+    case Step
+    case Success
+    case Notice
+    case Error
+}
 
-    public var headerStyle: TextStyle
-    public var bodyStyle: TextStyle
+public struct Log {
+    public static var styleMap: [LogType: (head: TextStyle, body: TextStyle)] = [:]
+
+    public var type: LogType
     public var filename: String
     public var line: Int
     public var function: String
 
-    public init(filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, headerStyle: TextStyle = Log.defaultHeaderStyle, bodyStyle: TextStyle = Log.defaultBodyStyle) {
+    public init(filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) {
         self.filename = (filename as NSString).lastPathComponent
         self.line = line
         self.function = function
-        self.headerStyle = headerStyle
-        self.bodyStyle = bodyStyle
+        self.type = type
     }
 
     public func message<T>(items items: [T]) -> String {
         let msg = items.reduce("", combine: { $0+"\($1)"})
-        return headerStyle.format("\(filename):\(line) \(function):") + "\n" + bodyStyle.format("\(msg)")
+        let (headerStyle, bodyStyle) = Log.styleMap[type] ?? (.Default, .Default)
+        return headerStyle.format("[\(type)] \(filename):\(line) \(function):") + "\n" + bodyStyle.format("\(msg)")
     }
 }
 
@@ -69,19 +74,19 @@ public extension Log {
         self.print(items: items)
     }
 
-    public static func message<T>(items items: [T], filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, headerStyle: TextStyle = Log.defaultHeaderStyle, bodyStyle: TextStyle = Log.defaultBodyStyle) -> String {
-        return Log(filename: filename, line: line, function: function, headerStyle: headerStyle, bodyStyle: bodyStyle).message(items: items)
+    public static func message<T>(items items: [T], filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) -> String {
+        return Log(filename: filename, line: line, function: function, type: type).message(items: items)
     }
 
-    public static func message<T>(items: T..., filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, headerStyle: TextStyle = Log.defaultHeaderStyle, bodyStyle: TextStyle = Log.defaultBodyStyle) -> String {
-        return Log(filename: filename, line: line, function: function, headerStyle: headerStyle, bodyStyle: bodyStyle).message(items: items)
+    public static func message<T>(items: T..., filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) -> String {
+        return Log(filename: filename, line: line, function: function, type: type).message(items: items)
     }
 
-    public static func print<T>(items items: [T], filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, headerStyle: TextStyle = Log.defaultHeaderStyle, bodyStyle: TextStyle = Log.defaultBodyStyle) {
-        Log(filename: filename, line: line, function: function, headerStyle: headerStyle, bodyStyle: bodyStyle).print(items: items)
+    public static func print<T>(items items: [T], filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) {
+        Log(filename: filename, line: line, function: function, type: type).print(items: items)
     }
 
-    public static func print<T>(items: T..., filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, headerStyle: TextStyle = Log.defaultHeaderStyle, bodyStyle: TextStyle = Log.defaultBodyStyle) {
-        Log(filename: filename, line: line, function: function, headerStyle: headerStyle, bodyStyle: bodyStyle).print(items: items)
+    public static func print<T>(items: T..., filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) {
+        Log(filename: filename, line: line, function: function, type: type).print(items: items)
     }
 }
