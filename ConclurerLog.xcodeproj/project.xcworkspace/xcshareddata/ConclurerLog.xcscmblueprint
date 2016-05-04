@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4BD7EFCF1EBF93CD365E6938D5707DE08BC092B7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4BD7EFCF1EBF93CD365E6938D5707DE08BC092B7" : 0,
+    "EB736954D6E8FB39CB38BC1688CC4D76B5A02CBF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9322C9F3-B7A0-45F1-AA83-DA4C3111E724",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4BD7EFCF1EBF93CD365E6938D5707DE08BC092B7" : "ConclurerLog\/",
+    "EB736954D6E8FB39CB38BC1688CC4D76B5A02CBF" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ConclurerLog",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ConclurerLog.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "finken.anydns.info:valentinknabel\/ConclurerLog.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4BD7EFCF1EBF93CD365E6938D5707DE08BC092B7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "finken.anydns.info:valentinknabel\/Au3dio.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB736954D6E8FB39CB38BC1688CC4D76B5A02CBF"
+    }
+  ]
+}

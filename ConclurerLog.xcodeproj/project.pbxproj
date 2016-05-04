@@ -391,6 +391,7 @@
 				BACA90251C55119000516175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BACA903C1C551A9A00516175 /* Build configuration list for PBXNativeTarget "ConclurerLogTests" */ = {
 			isa = XCConfigurationList;
@@ -399,6 +400,7 @@
 				BACA903E1C551A9A00516175 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
