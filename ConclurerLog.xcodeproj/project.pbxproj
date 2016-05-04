@@ -35,6 +35,7 @@
 		BACA90341C551A9A00516175 /* ConclurerLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConclurerLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACA90361C551A9A00516175 /* ConclurerLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclurerLogTests.swift; sourceTree = "<group>"; };
 		BACA90381C551A9A00516175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD26EBB1CDA95190002A6BD /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 		BACA90111C55119000516175 = {
 			isa = PBXGroup;
 			children = (
+				BAD26EBB1CDA95190002A6BD /* Package.swift */,
 				BACA901D1C55119000516175 /* ConclurerLog */,
 				BACA90351C551A9A00516175 /* ConclurerLogTests */,
 				BACA901C1C55119000516175 /* Products */,
