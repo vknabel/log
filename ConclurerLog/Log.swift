@@ -6,6 +6,14 @@
 //  Copyright © 2016 Conclurer GmbH. All rights reserved.
 //
 
+import func libc.getenv
+import func libc.setenv
+
+private func getenv(_ key: String) -> String? {
+    let out = libc.getenv(key)
+    return out ?? String(validatingUTF8: out!)
+}
+
 private func _print<T>(item: T) {
     print(item)
 }
@@ -30,7 +38,7 @@ public struct Log {
     public var line: Int
     public var function: String
 
-    public init(filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) {
+    public init(filename: String = #file, line: Int = #line, function: String = #function, type: LogType = .Step) {
         self.filename = (filename as NSString).lastPathComponent
         self.line = line
         self.function = function
@@ -48,7 +56,7 @@ public extension Log {
 
     public static var xcodeColorsEnabled: Bool {
         get {
-            if let xcodeColors = String.fromCString(getenv("XcodeColors")) where xcodeColors == "YES" {
+            if let xcodeColors = getenv("XcodeColors") where xcodeColors == "YES" {
                 return true
             } else {
                 return false
@@ -79,19 +87,19 @@ public extension Log {
         self.print(items: items)
     }
 
-    public static func message<T>(items items: [T], filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) -> String {
+    public static func message<T>(items items: [T], filename: String = #file, line: Int = #line, function: String = #function, type: LogType = .Step) -> String {
         return Log(filename: filename, line: line, function: function, type: type).message(items: items)
     }
 
-    public static func message<T>(items: T..., filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) -> String {
+    public static func message<T>(items: T..., filename: String = #file, line: Int = #line, function: String = #function, type: LogType = .Step) -> String {
         return Log(filename: filename, line: line, function: function, type: type).message(items: items)
     }
 
-    public static func print<T>(items items: [T], filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) {
+    public static func print<T>(items items: [T], filename: String = #file, line: Int = #line, function: String = #function, type: LogType = .Step) {
         Log(filename: filename, line: line, function: function, type: type).print(items: items)
     }
 
-    public static func print<T>(items: T..., filename: String = __FILE__, line: Int = __LINE__, function: String = __FUNCTION__, type: LogType = .Step) {
+    public static func print<T>(items: T..., filename: String = #file, line: Int = #line, function: String = #function, type: LogType = .Step) {
         Log(filename: filename, line: line, function: function, type: type).print(items: items)
     }
 }
